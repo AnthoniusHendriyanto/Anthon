@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\EmailController;
+namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -11,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+ */
 
 // Route::get('/', function () {
 //     return view('main');
@@ -19,5 +22,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/home', 'components/home', ['title' => 'Home']);
 Route::view('/', 'components/home', ['title' => 'Home']);
-Route::view('/contact', 'components/contact' , ['title' => 'Contact']);
+Route::view('/contact', 'components/contact', ['title' => 'Contact']);
 Route::view('/experience', 'components/experience', ['title' => 'Experience']);
+
+Route::get('/SendEmail', 'EmailController@index');
+Route::post('/send', 'EmailController@send');

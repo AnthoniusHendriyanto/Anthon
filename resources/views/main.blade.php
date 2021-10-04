@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description"
+        content="This is my first portfolio website, i still learned so give me your opinion about this website">
     <meta name="author" content="Anthon">
-    <meta name="generator" content="Hugo 0.88.1">
     <title>Portfolio Anthon | {{ $title }}</title>
 
     <link rel="icon" href="image/favicon.png" sizes="16x16">
@@ -59,8 +59,9 @@
                 font-family: 'Permanent Marker', cursive;">AH</h3>
                 <nav class="nav nav-masthead justify-content-center float-md-end">
                     <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home">Home</a>
-                    <a class="nav-link {{ Request::is('experience') ? 'active' : '' }}"" href="/experience">Experience</a>
-                    <a class="nav-link {{ Request::is('contact') ? 'active' : '' }}"" href="/contact">Contact</a>
+                    <a class="nav-link {{ Request::is('experience') ? 'active' : '' }}" href="
+                        /experience">Experience</a>
+                    <a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href=" /contact">Contact</a>
                 </nav>
             </div>
         </header>
@@ -78,4 +79,5 @@
 
     </div>
 </body>
+
 </html>
